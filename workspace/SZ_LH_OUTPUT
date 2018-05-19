@@ -1,0 +1,731 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><span><font color="blue" size="3pt">$CyDB:&gt; createStorage QuickStorageConfig.xml;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; loadStorage QuickStorageConfig.xml;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; declare string LHConfigFileName:= .\SZ_LH\workspace\lhashingConfig.xml;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; declare string TupleConfigFileName:= .\SZ_LH\workspace\TupleConfig.xml;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; declare string M:= 3;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; declare string lambdaUpper:= 1.5;</font></span><br><br><span><font color="blue" size="3pt">$CyDB:&gt; declare string lambdaLower:= 1.25;</font></span><br><br><span><font color="blue" size="3pt">//$CyDB:&gt; declare string $$totalPages := 0;</font></span><br><span><font color="blue" size="3pt">$SZ_LH:&gt; LHClear $$LHConfigFileName $$TupleConfigFileName;</font></span><br>$SZ_LH:&gt; LHClear &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt;;
+Create LH done!
+Successfully initialized a new LH from lhConfigFile!
+Successfully cleared config and storage catalogue from lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHCreateEmpty $$LHConfigFileName $$TupleConfigFileName $$M $$lambdaUpper $$lambdaLower;</font></span><br>$SZ_LH:&gt; LHCreateEmpty &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt;&lt;M&gt;&lt;lambdaUpper&gt;&lt;lambdaLower&gt;;
+Successfully parsesd arguments M is: 3,lambdaUpper is: 1.5, lambdaLower is: 1.25
+Create LH done!
+Successfully initialized a new LH
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [2,Michael,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [2,Michael,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 2,Michael,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 2, 77, 105, 99, 104, 97, 101, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [3,Jack,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [3,Jack,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 3,Jack,EE,90000
+processed to-insert tuple is: [0, 0, 0, 3, 74, 97, 99, 107, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [7,Helen,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [7,Helen,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 7,Helen,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 7, 72, 101, 108, 101, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [8,Jeff,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [8,Jeff,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 8,Jeff,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 8, 74, 101, 102, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [1,Kate,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [1,Kate,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 1,Kate,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 1, 75, 97, 116, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [6,Kevin,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [6,Kevin,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 6,Kevin,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 6, 75, 101, 118, 105, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [4,Osborn,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [4,Osborn,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 4,Osborn,ME,80000
+processed to-insert tuple is: [0, 0, 0, 4, 79, 115, 98, 111, 114, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [5,Janathan,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [5,Janathan,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 5,Janathan,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 5, 74, 97, 110, 97, 116, 104, 97, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [12,Michaels,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [12,Michaels,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 12,Michaels,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 12, 77, 105, 99, 104, 97, 101, 108, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [13,Jacks,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [13,Jacks,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 13,Jacks,EE,90000
+processed to-insert tuple is: [0, 0, 0, 13, 74, 97, 99, 107, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [17,Helens,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [17,Helens,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 17,Helens,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 17, 72, 101, 108, 101, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [18,Jeffs,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [18,Jeffs,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 18,Jeffs,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 18, 74, 101, 102, 102, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [11,Kates,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [11,Kates,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 11,Kates,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 11, 75, 97, 116, 101, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [16,Kevins,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [16,Kevins,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 16,Kevins,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 16, 75, 101, 118, 105, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [14,Osborns,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [14,Osborns,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 14,Osborns,ME,80000
+processed to-insert tuple is: [0, 0, 0, 14, 79, 115, 98, 111, 114, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [15,Janathans,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [15,Janathans,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 15,Janathans,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 15, 74, 97, 110, 97, 116, 104, 97, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [22,Michaele,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [22,Michaele,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 22,Michaele,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 22, 77, 105, 99, 104, 97, 101, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [23,Jacke,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [23,Jacke,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 23,Jacke,EE,90000
+processed to-insert tuple is: [0, 0, 0, 23, 74, 97, 99, 107, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [27,Helene,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [27,Helene,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 27,Helene,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 27, 72, 101, 108, 101, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [28,Jeffe,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [28,Jeffe,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 28,Jeffe,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 28, 74, 101, 102, 102, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [21,Katee,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [21,Katee,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 21,Katee,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 21, 75, 97, 116, 101, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [26,Kevine,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [26,Kevine,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 26,Kevine,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 26, 75, 101, 118, 105, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [24,Osborne,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [24,Osborne,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 24,Osborne,ME,80000
+processed to-insert tuple is: [0, 0, 0, 24, 79, 115, 98, 111, 114, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [25,Janathane,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [25,Janathane,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 25,Janathane,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 25, 74, 97, 110, 97, 116, 104, 97, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [32,Michaelr,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [32,Michaelr,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 32,Michaelr,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 32, 77, 105, 99, 104, 97, 101, 108, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [33,Jackr,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [33,Jackr,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 33,Jackr,EE,90000
+processed to-insert tuple is: [0, 0, 0, 33, 74, 97, 99, 107, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [37,Helenr,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [37,Helenr,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 37,Helenr,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 37, 72, 101, 108, 101, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [38,Jeffr,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [38,Jeffr,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 38,Jeffr,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 38, 74, 101, 102, 102, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [31,Kater,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [31,Kater,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 31,Kater,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 31, 75, 97, 116, 101, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [36,Kevinr,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [36,Kevinr,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 36,Kevinr,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 36, 75, 101, 118, 105, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [34,Osbornr,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [34,Osbornr,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 34,Osbornr,ME,80000
+processed to-insert tuple is: [0, 0, 0, 34, 79, 115, 98, 111, 114, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [35,Janathanr,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [35,Janathanr,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 35,Janathanr,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 35, 74, 97, 110, 97, 116, 104, 97, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [42,Michaelt,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [42,Michaelt,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 42,Michaelt,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 42, 77, 105, 99, 104, 97, 101, 108, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [43,Jackt,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [43,Jackt,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 43,Jackt,EE,90000
+processed to-insert tuple is: [0, 0, 0, 43, 74, 97, 99, 107, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [47,Helent,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [47,Helent,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 47,Helent,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 47, 72, 101, 108, 101, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [48,Jefft,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [48,Jefft,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 48,Jefft,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 48, 74, 101, 102, 102, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [41,Katet,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [41,Katet,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 41,Katet,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 41, 75, 97, 116, 101, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [46,Kevint,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [46,Kevint,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 46,Kevint,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 46, 75, 101, 118, 105, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [44,Osbornt,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [44,Osbornt,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 44,Osbornt,ME,80000
+processed to-insert tuple is: [0, 0, 0, 44, 79, 115, 98, 111, 114, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [45,Janathant,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [45,Janathant,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 45,Janathant,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 45, 74, 97, 110, 97, 116, 104, 97, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [52,Michaelu,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [52,Michaelu,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 52,Michaelu,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 52, 77, 105, 99, 104, 97, 101, 108, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [53,Jacku,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [53,Jacku,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 53,Jacku,EE,90000
+processed to-insert tuple is: [0, 0, 0, 53, 74, 97, 99, 107, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [57,Helenu,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [57,Helenu,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 57,Helenu,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 57, 72, 101, 108, 101, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [58,Jeffu,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [58,Jeffu,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 58,Jeffu,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 58, 74, 101, 102, 102, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [51,Kateu,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [51,Kateu,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 51,Kateu,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 51, 75, 97, 116, 101, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [56,Kevinu,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [56,Kevinu,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 56,Kevinu,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 56, 75, 101, 118, 105, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [54,Osbornu,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [54,Osbornu,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 54,Osbornu,ME,80000
+processed to-insert tuple is: [0, 0, 0, 54, 79, 115, 98, 111, 114, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [55,Janathanu,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [55,Janathanu,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 55,Janathanu,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 55, 74, 97, 110, 97, 116, 104, 97, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [100,shushu,STAT,150000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [100,shushu,STAT,150000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 100,shushu,STAT,150000
+processed to-insert tuple is: [0, 0, 0, 100, 115, 104, 117, 115, 104, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 84, 65, 84, 0, 0, 2, 73, -16]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [100,shushu,STAT,150000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [100,shushu,STAT,150000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 100,shushu,STAT,150000
+processed to-insert tuple is: [0, 0, 0, 100, 115, 104, 117, 115, 104, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 84, 65, 84, 0, 0, 2, 73, -16]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; CompareTuple [1,Jack,COMS,50000] [2,Tom,COMS,80000] $$TupleConfigFileName;</font></span><br>$SZ_LH:&gt; CompareTuple [TupleOne] [TupleTwo] &lt;TupleConfigXmlFile&gt;
+tuple attribute length is: 4
+If given bytes error, we return 0. Otherwise -1: tuple1 &lt; tuple2, 0: tuple1 == tuple2, 1: tuple1 &gt; tuple2
+Comparison result for tuple1 and tuple2 is: -1
+<span><font color="blue" size="3pt">$SZ_LH:&gt; CompareTuple [2,Tom,COMS,80000] [1,Jack,COMS,50000] $$TupleConfigFileName;</font></span><br>$SZ_LH:&gt; CompareTuple [TupleOne] [TupleTwo] &lt;TupleConfigXmlFile&gt;
+tuple attribute length is: 4
+If given bytes error, we return 0. Otherwise -1: tuple1 &lt; tuple2, 0: tuple1 == tuple2, 1: tuple1 &gt; tuple2
+Comparison result for tuple1 and tuple2 is: 1
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [2,Michael,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [2,Michael,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 2,Michael,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 2, 77, 105, 99, 104, 97, 101, 108, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [3,Jack,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [3,Jack,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 3,Jack,EE,90000
+processed to-insert tuple is: [0, 0, 0, 3, 74, 97, 99, 107, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [7,Helen,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [7,Helen,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 7,Helen,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 7, 72, 101, 108, 101, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [8,Jeff,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [8,Jeff,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 8,Jeff,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 8, 74, 101, 102, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [1,Kate,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [1,Kate,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 1,Kate,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 1, 75, 97, 116, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [6,Kevin,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [6,Kevin,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 6,Kevin,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 6, 75, 101, 118, 105, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [4,Osborn,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [4,Osborn,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 4,Osborn,ME,80000
+processed to-insert tuple is: [0, 0, 0, 4, 79, 115, 98, 111, 114, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [5,Janathan,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [5,Janathan,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 5,Janathan,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 5, 74, 97, 110, 97, 116, 104, 97, 110, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [12,Michaels,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [12,Michaels,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 12,Michaels,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 12, 77, 105, 99, 104, 97, 101, 108, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [13,Jacks,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [13,Jacks,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 13,Jacks,EE,90000
+processed to-insert tuple is: [0, 0, 0, 13, 74, 97, 99, 107, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [17,Helens,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [17,Helens,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 17,Helens,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 17, 72, 101, 108, 101, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [18,Jeffs,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [18,Jeffs,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 18,Jeffs,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 18, 74, 101, 102, 102, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [11,Kates,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [11,Kates,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 11,Kates,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 11, 75, 97, 116, 101, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [16,Kevins,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [16,Kevins,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 16,Kevins,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 16, 75, 101, 118, 105, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [14,Osborns,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [14,Osborns,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 14,Osborns,ME,80000
+processed to-insert tuple is: [0, 0, 0, 14, 79, 115, 98, 111, 114, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [15,Janathans,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [15,Janathans,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 15,Janathans,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 15, 74, 97, 110, 97, 116, 104, 97, 110, 115, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [22,Michaele,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [22,Michaele,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 22,Michaele,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 22, 77, 105, 99, 104, 97, 101, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [23,Jacke,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [23,Jacke,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 23,Jacke,EE,90000
+processed to-insert tuple is: [0, 0, 0, 23, 74, 97, 99, 107, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [27,Helene,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [27,Helene,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 27,Helene,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 27, 72, 101, 108, 101, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [28,Jeffe,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [28,Jeffe,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 28,Jeffe,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 28, 74, 101, 102, 102, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [21,Katee,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [21,Katee,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 21,Katee,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 21, 75, 97, 116, 101, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [26,Kevine,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [26,Kevine,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 26,Kevine,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 26, 75, 101, 118, 105, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [24,Osborne,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [24,Osborne,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 24,Osborne,ME,80000
+processed to-insert tuple is: [0, 0, 0, 24, 79, 115, 98, 111, 114, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [25,Janathane,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [25,Janathane,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 25,Janathane,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 25, 74, 97, 110, 97, 116, 104, 97, 110, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [32,Michaelr,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [32,Michaelr,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 32,Michaelr,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 32, 77, 105, 99, 104, 97, 101, 108, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [33,Jackr,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [33,Jackr,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 33,Jackr,EE,90000
+processed to-insert tuple is: [0, 0, 0, 33, 74, 97, 99, 107, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [37,Helenr,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [37,Helenr,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 37,Helenr,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 37, 72, 101, 108, 101, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [38,Jeffr,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [38,Jeffr,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 38,Jeffr,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 38, 74, 101, 102, 102, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [31,Kater,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [31,Kater,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 31,Kater,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 31, 75, 97, 116, 101, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [36,Kevinr,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [36,Kevinr,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 36,Kevinr,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 36, 75, 101, 118, 105, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [34,Osbornr,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [34,Osbornr,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 34,Osbornr,ME,80000
+processed to-insert tuple is: [0, 0, 0, 34, 79, 115, 98, 111, 114, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [35,Janathanr,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [35,Janathanr,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 35,Janathanr,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 35, 74, 97, 110, 97, 116, 104, 97, 110, 114, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [42,Michaelt,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [42,Michaelt,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 42,Michaelt,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 42, 77, 105, 99, 104, 97, 101, 108, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [43,Jackt,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [43,Jackt,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 43,Jackt,EE,90000
+processed to-insert tuple is: [0, 0, 0, 43, 74, 97, 99, 107, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [47,Helent,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [47,Helent,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 47,Helent,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 47, 72, 101, 108, 101, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [48,Jefft,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [48,Jefft,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 48,Jefft,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 48, 74, 101, 102, 102, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [41,Katet,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [41,Katet,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 41,Katet,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 41, 75, 97, 116, 101, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [46,Kevint,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [46,Kevint,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 46,Kevint,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 46, 75, 101, 118, 105, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [44,Osbornt,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [44,Osbornt,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 44,Osbornt,ME,80000
+processed to-insert tuple is: [0, 0, 0, 44, 79, 115, 98, 111, 114, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [45,Janathant,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [45,Janathant,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 45,Janathant,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 45, 74, 97, 110, 97, 116, 104, 97, 110, 116, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [52,Michaelu,COMS,100000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [52,Michaelu,COMS,100000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 52,Michaelu,COMS,100000
+processed to-insert tuple is: [0, 0, 0, 52, 77, 105, 99, 104, 97, 101, 108, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 79, 77, 83, 0, 0, 1, -122, -96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [53,Jacku,EE,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [53,Jacku,EE,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 53,Jacku,EE,90000
+processed to-insert tuple is: [0, 0, 0, 53, 74, 97, 99, 107, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 69, 0, 0, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [57,Helenu,PHYS,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [57,Helenu,PHYS,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 57,Helenu,PHYS,80000
+processed to-insert tuple is: [0, 0, 0, 57, 72, 101, 108, 101, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 80, 72, 89, 83, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [58,Jeffu,CHEM,90000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [58,Jeffu,CHEM,90000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 58,Jeffu,CHEM,90000
+processed to-insert tuple is: [0, 0, 0, 58, 74, 101, 102, 102, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 72, 69, 77, 0, 0, 1, 95, -112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [51,Kateu,ENGL,60000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [51,Kateu,ENGL,60000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 51,Kateu,ENGL,60000
+processed to-insert tuple is: [0, 0, 0, 51, 75, 97, 116, 101, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 69, 78, 71, 76, 0, 0, 0, -22, 96]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [56,Kevinu,ALG,70000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [56,Kevinu,ALG,70000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 56,Kevinu,ALG,70000
+processed to-insert tuple is: [0, 0, 0, 56, 75, 101, 118, 105, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 65, 76, 71, 0, 0, 0, 1, 17, 112]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [54,Osbornu,ME,80000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [54,Osbornu,ME,80000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 54,Osbornu,ME,80000
+processed to-insert tuple is: [0, 0, 0, 54, 79, 115, 98, 111, 114, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, 69, 0, 0, 0, 0, 1, 56, -128]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [55,Janathanu,SPORT,120000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [55,Janathanu,SPORT,120000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 55,Janathanu,SPORT,120000
+processed to-insert tuple is: [0, 0, 0, 55, 74, 97, 110, 97, 116, 104, 97, 110, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 80, 79, 82, 84, 0, 1, -44, -64]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [100,shushu,STAT,150000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [100,shushu,STAT,150000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 100,shushu,STAT,150000
+processed to-insert tuple is: [0, 0, 0, 100, 115, 104, 117, 115, 104, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 84, 65, 84, 0, 0, 2, 73, -16]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; LHInsert $$LHConfigFileName $$TupleConfigFileName [100,shushu,STAT,150000];</font></span><br>$CyUtils:&gt; LHInsert &lt;LHConfigXmlFile&gt; &lt;TupleConfigXmlFile&gt; [OneTuple];
+tupleData is: [100,shushu,STAT,150000]
+Successfully initialized a new LH with hashfile!
+currentContent of tuple data is: 100,shushu,STAT,150000
+processed to-insert tuple is: [0, 0, 0, 100, 115, 104, 117, 115, 104, 117, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 83, 84, 65, 84, 0, 0, 2, 73, -16]
+Successfully insert this tuple!
+Successfully updated the lhConfigFile!
+<span><font color="blue" size="3pt">$SZ_LH:&gt; CompareTuple [1,Jack,COMS,50000] [2,Tom,COMS,80000] $$TupleConfigFileName;</font></span><br>$SZ_LH:&gt; CompareTuple [TupleOne] [TupleTwo] &lt;TupleConfigXmlFile&gt;
+tuple attribute length is: 4
+If given bytes error, we return 0. Otherwise -1: tuple1 &lt; tuple2, 0: tuple1 == tuple2, 1: tuple1 &gt; tuple2
+Comparison result for tuple1 and tuple2 is: -1
+<span><font color="blue" size="3pt">$SZ_LH:&gt; CompareTuple [2,Tom,COMS,80000] [1,Jack,COMS,50000] $$TupleConfigFileName;</font></span><br>$SZ_LH:&gt; CompareTuple [TupleOne] [TupleTwo] &lt;TupleConfigXmlFile&gt;
+tuple attribute length is: 4
+If given bytes error, we return 0. Otherwise -1: tuple1 &lt; tuple2, 0: tuple1 == tuple2, 1: tuple1 &gt; tuple2
+Comparison result for tuple1 and tuple2 is: 1</pre>
+  </body>
+</html>

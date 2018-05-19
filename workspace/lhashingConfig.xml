@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><lhashingConfig Name="CreateLHAndInsert">
+	<LHName>MyLinearHashing</LHName>
+	<pageCapacity>256</pageCapacity>
+	<Directory>[14238, 14243, 14245, 14231, 14233, 14237, 14239, 14244, 14246]</Directory>
+	<M>6</M>
+	<sp>3</sp>
+	<totalPages>12</totalPages>
+	<lambdaAverage>1.3333333333333333</lambdaAverage>
+	<lambdaUpper>1.5</lambdaUpper>
+	<lambdaLower>1.25</lambdaLower>
+</lhashingConfig>
